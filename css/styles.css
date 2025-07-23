@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+header{
+  color: whitesmoke;
+  background-color:#023047 ;
+ text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+  font-optical-sizing: 3rem;
+  font-style:normal;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+.titulos{
+ 
+  font-size: 1.8rem ;
+  color: whitesmoke;
+  background-color: #219ebc  ;
+  text-align: center;
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing:auto;
+  font-style:normal;
+  border-radius: 5px;
+}
+
+
+.videoexplicativo{
+  margin-left:25% ;
+height: 40%;
+width: 50% ;
+margin-bottom: 10% ;
+
+}
+
+.preguntasfrecuentes{
+ justify-items: center;
+}
+
+.preguntafrecuente{
+ 
+font-family: "Roboto", sans-serif;
+  font-optical-sizing:auto;
+  font-style:normal;
+ font-size: 1.6rem;
+ width:80% ;
+  height: 5%;
+margin:0.5% ;
+border: solid black 1px ;
+}
+
+.botoncontainer{
+  font-size:1rem ;
+width: 60% ;
+  margin-left: 18% ;
+padding:1rem ;
+border: 5px solid #8ecae6;
+text-align: center;
+font-size: 2rem;
+border-radius: 10px;
+margin-bottom: 10% ;
+}
+.botondecompra{
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+
+footer{
+  color: whitesmoke;
+
+  justify-content: center;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+
+  background-color:#219ebc ;
+  font-size: 60%;
+  text-align: center;
+  font-size: 1rem ;
+  border: 5px ;
+  border-radius: 5px ;
+}
+
+.titulo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  color: white;
+  background-color: #012d40; /* tu color azul oscuro */
+  text-align: center;
+  padding: 10px;
+}
+.titulodepagina::before {
+  content: "\f0e7"; /* Ícono de rayo (Font Awesome) */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 1em;
+  color: inherit;           /* ¡Esto hace que el rayo sea blanco! */
+  vertical-align: 0;        /* Corrige alineación con Orbitron */
+  display: inline-block;
+  width: 0.6em;              /* Tamaño similar a la "i" */
+  text-align: center;
+  margin-left: 0.1em;
+margin-right: 0.25em;
+}
