@@ -29,19 +29,22 @@ header{
 
 
 .videoexplicativo{
-  margin-left:25% ;
-height: 40%;
-width: 50% ;
-margin-bottom: 10% ;
+  margin-left: 6%;
+  align-content: center;
+margin-bottom: 5% ;
 
 }
 
-.preguntasfrecuentes{
- justify-items: center;
+
+
+.cajadepreguntas{
+  justify-items: center;
+margin-bottom:5% ;
+margin-top:5%;
 }
 
 .preguntafrecuente{
- 
+ border-radius:5% ;
 font-family: "Roboto", sans-serif;
   font-optical-sizing:auto;
   font-style:normal;
@@ -51,19 +54,31 @@ font-family: "Roboto", sans-serif;
 margin:0.5% ;
 border: solid black 1px ;
 }
+.titulo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  color: white;
+  background-color: #012d40; /* tu color azul oscuro */
+  text-align: center;
+  
+}
+
+.botoncontainersection{
+  justify-items: center;
+}
 
 .botoncontainer{
-  font-size:1rem ;
-width: 60% ;
-  margin-left: 18% ;
-padding:1rem ;
+
+  text-align: center;
+  border-radius:5% ;
+ height: 60%;
+width: 60%;
 border: 5px solid #8ecae6;
-text-align: center;
-font-size: 2rem;
-border-radius: 10px;
-margin-bottom: 10% ;
+font-size:2rem ;
+
 }
 .botondecompra{
+
   text-decoration: none;
   color: black;
   font-family: "Roboto", sans-serif;
@@ -87,14 +102,7 @@ footer{
   border-radius: 5px ;
 }
 
-.titulo {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2em;
-  color: white;
-  background-color: #012d40; /* tu color azul oscuro */
-  text-align: center;
-  padding: 10px;
-}
+
 .titulodepagina::before {
   content: "\f0e7"; /* Ícono de rayo (Font Awesome) */
   font-family: "Font Awesome 6 Free";
