@@ -29,18 +29,20 @@ header{
 
 
 .videoexplicativo{
-  margin-left: 6%;
-  align-content: center;
-margin-bottom: 5% ;
+  display: flex;
+  justify-content: center;
+  
 
 }
 
 
 
 .cajadepreguntas{
-  justify-items: center;
-margin-bottom:5% ;
-margin-top:5%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+margin-bottom:5%;
+
 }
 
 .preguntafrecuente{
@@ -87,10 +89,7 @@ font-size:2rem ;
 
 
 footer{
-  color: whitesmoke;
-
-  justify-content: center;
-  flex-direction: row;
+ color: whitesmoke;
   justify-content: center;
   display: flex;
 
@@ -99,7 +98,7 @@ footer{
   text-align: center;
   font-size: 1rem ;
   border: 5px ;
-  border-radius: 5px ;
+  border-radius: 5px ; 
 }
 
 
