@@ -1,9 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+.titulo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  color: white;
+  background-color: #012d40; /* tu color azul oscuro */
+  text-align: center;
+  height: 100%;
+}
 
 
 header{
+ 
   color: whitesmoke;
   background-color:#023047 ;
  text-transform: uppercase;
@@ -13,6 +22,20 @@ header{
   text-align: center;
   border-radius: 5px;
 
+}
+
+.titulodepagina::before {
+  content: "\f0e7"; /* Ícono de rayo (Font Awesome) */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 1em;
+  color: inherit;           /* ¡Esto hace que el rayo sea blanco! */
+  vertical-align: 0;        /* Corrige alineación con Orbitron */
+  display: inline-block;
+  width: 0.6em;              /* Tamaño similar a la "i" */
+  text-align: center;
+  margin-left: 0.1em;
+margin-right: 0.25em;
 }
 
 .titulos{
@@ -56,14 +79,7 @@ font-family: "Roboto", sans-serif;
 margin:0.5% ;
 border: solid black 1px ;
 }
-.titulo {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2em;
-  color: white;
-  background-color: #012d40; /* tu color azul oscuro */
-  text-align: center;
-  
-}
+
 
 .botoncontainersection{
   justify-items: center;
@@ -88,11 +104,12 @@ font-size:2rem ;
 }
 
 
-footer{
+.footer{
  color: whitesmoke;
   justify-content: center;
   display: flex;
-
+  
+  height:100% ;
   background-color:#219ebc ;
   font-size: 60%;
   text-align: center;
@@ -102,16 +119,3 @@ footer{
 }
 
 
-.titulodepagina::before {
-  content: "\f0e7"; /* Ícono de rayo (Font Awesome) */
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  font-size: 1em;
-  color: inherit;           /* ¡Esto hace que el rayo sea blanco! */
-  vertical-align: 0;        /* Corrige alineación con Orbitron */
-  display: inline-block;
-  width: 0.6em;              /* Tamaño similar a la "i" */
-  text-align: center;
-  margin-left: 0.1em;
-margin-right: 0.25em;
-}
