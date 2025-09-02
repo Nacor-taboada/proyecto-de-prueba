@@ -3,6 +3,7 @@
 
 .titulo {
   font-family: 'Orbitron', sans-serif;
+  
   font-size: 2em;
   color: white;
   background-color: #012d40; /* tu color azul oscuro */
@@ -104,18 +105,56 @@ font-size:2rem ;
 }
 
 
-.footer{
- color: whitesmoke;
-  justify-content: center;
-  display: flex;
-  
-  height:100% ;
-  background-color:#219ebc ;
-  font-size: 60%;
+footer {
+  border-radius: 5px;
+  background-color: #219ebc;
+  color: white;
   text-align: center;
-  font-size: 1rem ;
-  border: 5px ;
-  border-radius: 5px ; 
+  padding: 10px 0;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1; /* ocupa el espacio restante y empuja el footer */
+  }
+
+  footer {
+    margin-top: auto; /* footer pegado al final */
+  }
+
+  /* Ajuste para reducir el espacio entre preguntas y footer */
+  .cajadepreguntas {
+    margin-bottom: 2%; /* más chico que en móvil */
+  }
+
+  /* Botón de compra más grande */
+  .botoncontainer {
+    width: 70%;   /* más ancho en tablet */
+    font-size: 2.2rem;
+    padding: 12px; /* más altura */
+  }
+
+  /* Preguntas frecuentes más grandes */
+  .preguntafrecuente {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+
+   .titulos {
+    font-size: 2.2rem;  /* más grande que el 1.8rem que ya tenés */
+  }
+}
+
+
+
+
 
 
