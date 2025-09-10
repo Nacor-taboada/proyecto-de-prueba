@@ -6,7 +6,7 @@
   
   font-size: 2em;
   color: white;
-  background-color: #012d40; /* tu color azul oscuro */
+  background-color: #f3722c; /* tu color azul oscuro */
   text-align: center;
   height: 100%;
 }
@@ -15,7 +15,7 @@
 header{
  
   color: whitesmoke;
-  background-color:#023047 ;
+  background-color:#f3722c ;
  text-transform: uppercase;
     font-family: "Orbitron", sans-serif;
   font-optical-sizing: 3rem;
@@ -23,6 +23,14 @@ header{
   text-align: center;
   border-radius: 5px;
 
+}
+
+.titulodepagina {
+  font-family: "Font Awesome 6 Free"; /* obliga a usar solo FA */
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  line-height: 1;
 }
 
 .titulodepagina::before {
@@ -43,7 +51,7 @@ margin-right: 0.25em;
  
   font-size: 1.8rem ;
   color: whitesmoke;
-  background-color: #219ebc  ;
+  background-color: #f8961e  ;
   text-align: center;
     font-family: "Roboto", sans-serif;
   font-optical-sizing:auto;
@@ -52,11 +60,19 @@ margin-right: 0.25em;
 }
 
 
-.videoexplicativo{
+.videoexplicativo {
   display: flex;
   justify-content: center;
-  
+  align-items: center;
+  margin: 2rem 0; /* espacio arriba y abajo */
+}
 
+.videoexplicativo video {
+  width: 90%;          /* ocupa la mayor parte del ancho del contenedor */
+  max-width: 500px;    /* límite máximo para móviles grandes */
+  height: auto;        /* mantiene proporción automáticamente */
+  max-height: 250px;   /* altura máxima en móviles */
+  border-radius: 5px;  /* opcional: bordes redondeados */
 }
 
 
@@ -70,15 +86,23 @@ margin-bottom:5%;
 }
 
 .preguntafrecuente{
- border-radius:5% ;
-font-family: "Roboto", sans-serif;
-  font-optical-sizing:auto;
-  font-style:normal;
- font-size: 1.6rem;
- width:80% ;
-  height: 5%;
-margin:0.5% ;
-border: solid black 1px ;
+ border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.4rem;
+  width: 90%;                 /* ancho flexible */
+  margin: 0.5% auto;
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     /* centra el contenido */
+  align-items: flex-start;     /* alinea el texto */
+  min-height: 60px;            /* altura mínima en móvil */
+  box-sizing: border-box;
+  overflow: hidden;            /* evita que el texto sobresalga */
+  text-overflow: ellipsis;     /* puntos suspensivos si el texto es muy largo */
+  white-space: normal;         /* permite que el texto baje de línea */
 }
 
 
@@ -92,7 +116,7 @@ border: solid black 1px ;
   border-radius:5% ;
  height: 60%;
 width: 60%;
-border: 5px solid #8ecae6;
+border: 5px solid #f9c74f;
 font-size:2rem ;
 
 }
@@ -105,17 +129,22 @@ font-size:2rem ;
 }
 
 
-footer {
+.footer {
   border-radius: 5px;
-  background-color: #219ebc;
+  background-color: #f8961e;
   color: white;
   text-align: center;
-  padding: 10px 0;
-  font-size: 0.9rem;
+  padding: 3px ;
+  font-size: 0.6rem;
   font-weight: bold;
 }
 
-@media (min-width: 600px) and (max-width: 1024px) {
+.footerh2{
+font-size: 1.4rem ;
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
     min-height: 100vh;
     display: flex;
@@ -126,9 +155,15 @@ footer {
     flex: 1; /* ocupa el espacio restante y empuja el footer */
   }
 
-  footer {
-    margin-top: auto; /* footer pegado al final */
+  .footer {
+      
+    padding: 15px 0;     /* un poco más de alto */
   }
+
+  .footerh2{
+font-size: 1.8rem ;
+
+}
 
   /* Ajuste para reducir el espacio entre preguntas y footer */
   .cajadepreguntas {
@@ -145,6 +180,8 @@ footer {
   /* Preguntas frecuentes más grandes */
   .preguntafrecuente {
     font-size: 1.8rem;
+    width: 80%;
+    min-height: 80px;     /* más alto en pantallas grandes */
     padding: 10px;
   }
 
