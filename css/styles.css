@@ -129,6 +129,50 @@ font-size:2rem ;
 }
 
 
+.precio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;               /* más espacio entre elementos */
+  margin: 20px auto;
+  background: #fff;
+  border: 3px solid #f8961e;
+  padding: 15px 25px;
+  border-radius: 12px;
+  
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* sombra para destacar */
+}
+
+/* Precio original tachado */
+.precio-original {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 1.6rem;         /* más grande */
+  font-family: "Roboto", sans-serif;
+}
+
+/* Precio con descuento */
+.precio-descuento {
+  color: #06d6a0;
+  font-size: 2.2rem;         /* más llamativo */
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Etiqueta de descuento */
+.descuento {
+  background-color: #d62828;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+
 .footer {
   border-radius: 5px;
   background-color: #f8961e;
